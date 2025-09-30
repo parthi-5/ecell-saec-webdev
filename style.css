@@ -1,4 +1,19 @@
 /* Reset default browser styles */
+.logo img {
+  width: 150px; /* adjust size */
+  height: auto; /* keeps proportions */
+  border-radius: 10px;
+  display: block;
+}
+
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px; /* space between logo and text */
+  padding: 50px;
+}
+
 * {
   margin: 0;
   padding: 0;
