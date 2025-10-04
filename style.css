@@ -89,7 +89,7 @@ footer {
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 20px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .blog-post h2 {
@@ -120,7 +120,7 @@ footer {
     width: 100px; /* smaller logo on small screens */
     margin-bottom: 20px;
   }
-} 
+}
 @media (max-width: 800px) {
   body {
     padding: 10px;
@@ -130,13 +130,13 @@ footer {
   ul {
     padding: 0 10px;
   }
-} 
+}
 @media (max-width: 400px) {
   nav a {
     display: block;
     margin: 0.5rem 0;
   }
-}  
+}
 @media (max-width: 500px) {
   .blog-list {
     padding: 10px;
@@ -146,3 +146,41 @@ footer {
     padding: 15px;
   }
 }
+/* Responsive Design */
+@media (max-width: 600px) {
+  .home-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo img {
+    width: 100px; /* smaller logo on small screens */
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 800px) {
+  body {
+    padding: 10px;
+  }
+
+  p,
+  ul {
+    padding: 0 10px;
+  }
+}
+@media (max-width: 400px) {
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+}
+@media (max-width: 500px) {
+  .blog-list {
+    padding: 10px;
+  }
+
+  .blog-post {
+    padding: 15px;
+  }
+}
+/* End of CSS file */
