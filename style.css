@@ -1,9 +1,37 @@
+/* Home Section */
+.home {
+  text-align: center; /* centers everything */
+  margin-top: 50px; /* space below navbar */
+}
+
+.home h1 {
+  color: #007bff; /* your blue heading color */
+  font-size: 2rem;
+  margin-bottom: 10px; /* small gap before paragraph */
+}
+
+.home p {
+  color: #333;
+  font-size: 1.1rem;
+  margin-top: 0;
+}
+
 /* Reset default browser styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000ff; /* Dark green-black tone like SRMIST */
+  padding: 10px 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 .logo img {
   width: 150px; /* adjust size */
   height: auto; /* keeps proportions */
   border-radius: 10px;
   display: block;
+  transition: transform 0.3s ease; /* smooth transition for hover effect */
 }
 
 .home-container {
@@ -12,12 +40,21 @@
   justify-content: center;
   gap: 40px; /* space between logo and text */
   padding: 50px;
+  background-color: #ffffff; /* white background for contrast */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  flex-wrap: wrap; /* allows wrapping on smaller screens */
+  text-align: left; /* aligns text to the left */
+  transition: transform 0.3s ease; /* smooth transition for hover effect */
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth; /* smooth scrolling for anchor links */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* modern, clean font */
 }
 
 body {
@@ -26,6 +63,12 @@ body {
   background-color: #f9f9f9;
   color: #333;
   padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: background-color 0.3s ease, color 0.3s ease; /* smooth transition for theme change */
 }
 
 /* Navigation */
@@ -34,6 +77,11 @@ nav {
   color: #fff;
   padding: 1rem;
   text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 nav a {
@@ -41,6 +89,7 @@ nav a {
   text-decoration: none;
   margin: 0 1rem;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
@@ -61,12 +110,17 @@ ul {
   max-width: 800px;
   margin: 0 auto 1rem;
   padding: 0 1rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  text-align: justify;
 }
 
 /* Lists */
 ul {
   list-style: square;
   padding-left: 2rem;
+  margin-bottom: 1rem;
 }
 
 /* Footer (optional) */
@@ -76,12 +130,22 @@ footer {
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 0.9rem;
+  z-index: 1000;
+  transition: background-color 0.3s ease, color 0.3s ease; /* smooth transition for theme change */
 }
 
 .blog-list {
   max-width: 800px;
   margin: 50px auto;
   padding: 20px;
+  background: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .blog-post {
@@ -90,24 +154,38 @@ footer {
   padding: 20px;
   margin-bottom: 20px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease; /* smooth transition for hover effect */
 }
 
 .blog-post h2 {
   color: #007bff;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  text-align: left;
 }
 
 .blog-post .date {
   font-size: 0.9rem;
   color: gray;
+  margin-bottom: 15px;
+  text-align: left;
+  font-style: italic;
 }
 
 .blog-post a {
   text-decoration: none;
   color: #007bff;
   font-weight: bold;
+  transition: text-decoration 0.3s ease;
+  display: inline-block;
+  margin-top: 10px;
+  text-align: left;
 }
 .blog-post a:hover {
   text-decoration: underline;
+  color: #0056b3;
+  transform: scale(1.05); /* slight zoom on hover */
+  transition: transform 0.3s ease;
 }
 /* Responsive Design */
 @media (max-width: 600px) {
